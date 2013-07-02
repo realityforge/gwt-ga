@@ -1,6 +1,8 @@
 gwt-ga
 ======
 
+[![Build Status](https://secure.travis-ci.org/realityforge/gwt-ga.png?branch=master)](http://travis-ci.org/realityforge/gwt-ga)
+
 A simple GWT library for interacting with Google Analytics
 
 Credit
