@@ -4,5 +4,5 @@
   <inherits name='com.google.gwt.core.Core'/>
   <inherits name="com.google.gwt.event.Event"/>
   <inherits name="com.google.gwt.place.Place"/>
-  <source path='.'/>
+  <source path=''/>
 </module>
