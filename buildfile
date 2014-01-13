@@ -11,8 +11,7 @@ define 'gwt-ga' do
 
   compile.with :javax_annotation,
                :gwt_user,
-               :javax_inject,
-               :google_guice
+               :javax_inject
 
   package(:jar).include("#{_(:source, :main, :java)}/*")
 
