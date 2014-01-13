@@ -14,6 +14,7 @@ define 'gwt-ga' do
                :javax_inject
 
   package(:jar).include("#{_(:source, :main, :java)}/*")
+  package(:javadoc)
 
   iml.add_jruby_facet
 end
