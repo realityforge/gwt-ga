@@ -27,8 +27,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * @author Christian Goudreau
  */
 @Qualifier
-@Target( ElementType.PARAMETER )
-@Retention( RUNTIME )
+@Target(ElementType.PARAMETER)
+@Retention(RUNTIME)
 public @interface GaAccount
 {
 }
