@@ -15,10 +15,10 @@
  */
 package org.realityforge.gwt.ga;
 
+import com.google.inject.BindingAnnotation;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-import javax.inject.Qualifier;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
@@ -26,7 +26,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  *
  * @author Christian Goudreau
  */
-@Qualifier
+@BindingAnnotation
 @Target(ElementType.PARAMETER)
 @Retention(RUNTIME)
 public @interface GaAccount
