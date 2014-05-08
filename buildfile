@@ -1,23 +1,27 @@
 require 'buildr/git_auto_version'
-require 'buildr/top_level_generate_dir'
 
 desc 'GWT Google Analytics Library'
 define 'gwt-ga' do
   project.group = 'org.realityforge.gwt.ga'
-  compile.options.source = '1.6'
-  compile.options.target = '1.6'
+  compile.options.source = '1.7'
+  compile.options.target = '1.7'
   compile.options.lint = 'all'
 
   project.version = ENV['PRODUCT_VERSION'] if ENV['PRODUCT_VERSION']
 
+  pom.add_apache2_license
+  pom.add_github_project('realityforge/gwt-ga')
+  pom.add_developer('realityforge', 'Peter Donald')
+  pom.provided_dependencies.concat [:javax_annotation, :javax_inject]
+
   compile.with :javax_annotation,
                :gwt_user,
-               :javax_inject,
-               :google_guice
+               :google_guice,
+               :javax_inject
 
-  package(:jar).tap do |jar|
-    jar.include compile.sources, :as => '.'
-  end
+  package(:jar).include("#{_(:source, :main, :java)}/*")
+  package(:sources)
+  package(:javadoc)
 
   iml.add_jruby_facet
 end

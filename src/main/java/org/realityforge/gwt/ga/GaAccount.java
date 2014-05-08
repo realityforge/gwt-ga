@@ -13,7 +13,6 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
 package org.realityforge.gwt.ga;
 
 import com.google.inject.BindingAnnotation;
@@ -28,8 +27,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * @author Christian Goudreau
  */
 @BindingAnnotation
-@Target( ElementType.PARAMETER )
-@Retention( RUNTIME )
+@Target(ElementType.PARAMETER)
+@Retention(RUNTIME)
 public @interface GaAccount
 {
 }
