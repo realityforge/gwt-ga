@@ -1,4 +1,5 @@
 require 'buildr/git_auto_version'
+require 'buildr/gpg'
 
 desc 'GWT Google Analytics Library'
 define 'gwt-ga' do
